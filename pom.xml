@@ -23,7 +23,7 @@
   <parent>
     <groupId>io.airlift</groupId>
     <artifactId>airbase</artifactId>
-    <version>46</version>
+    <version>79</version>
     <relativePath />
   </parent>
 
@@ -81,11 +81,18 @@
     <air.check.skip-findbugs>true</air.check.skip-findbugs>
     <air.check.skip-pmd>true</air.check.skip-pmd>
     <air.check.skip-jacoco>true</air.check.skip-jacoco>
+    <air.check.skip-license>true</air.check.skip-license>
+    <air.check.skip-checkstyle>true</air.check.skip-checkstyle>
+    <air.check.skip-modernizer>true</air.check.skip-modernizer>
+    <air.check.skip-spotbugs>true</air.check.skip-spotbugs>
+    <air.check.skip-duplicate-finder>true</air.check.skip-duplicate-finder>
 
-    <dep.airlift.version>0.119</dep.airlift.version>
+    <dep.airlift.version>0.163</dep.airlift.version>
     <dep.antlr.version>3.5.2</dep.antlr.version>
     <dep.maven-api.version>3.2.5</dep.maven-api.version>
-    <dep.fb.nifty.version>0.23.0</dep.fb.nifty.version>
+    <dep.fb.nifty.version>0.24.0-SNAPSHOT</dep.fb.nifty.version>
+    <dep.guice.version>4.1.0</dep.guice.version>
+    <dep.guava.version>23.0</dep.guava.version>
   </properties>
 
   <dependencyManagement>
@@ -178,7 +185,7 @@
       <dependency>
         <groupId>io.airlift</groupId>
         <artifactId>units</artifactId>
-        <version>${dep.airlift.version}</version>
+        <version>1.0</version>
       </dependency>
 
       <dependency>

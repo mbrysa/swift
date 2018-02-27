@@ -47,7 +47,6 @@ import com.google.common.base.Throwables;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Lists;
 import com.google.common.reflect.TypeToken;
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import org.apache.thrift.protocol.TProtocol;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassWriter;
@@ -120,7 +119,6 @@ public class ThriftCodecByteCodeGenerator<T>
     private final ThriftCodec<T> thriftCodec;
 
     @SuppressWarnings("unchecked")
-    @SuppressFBWarnings("DM_DEFAULT_ENCODING")
     public ThriftCodecByteCodeGenerator(
             ThriftCodecManager codecManager,
             ThriftStructMetadata metadata,
